@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 42px;
+}
+
+#botoes button{
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+
+#jogo{
+    display: flex;
+    width: 300px;
+    margin: 0 auto;     /*centralizando o elemento*/
+    flex-direction: row;
+    flex-wrap: wrap;        /*Quebra de linha*/
+    position: relative;
+}
+
+
+.quadros{
+    height: 100px;
+    border: 5px black solid;
+    box-sizing: border-box;         /*O tamanho total contado com a borda*/
+    flex: 1 1 33%;      /*Elementos vão se repetir e cada 1 ocupa 33%, ou seja cabem só 3 divs por linha*/
+}
+
+#quadro1, #quadro2, #quadro3{
+    border-top: none;
+}
+
+#quadro1, #quadro4, #quadro7{
+    border-left: none;
+}
+
+#quadro3, #quadro6, #quadro9{
+    border-right: none;
+}
+
+#quadro7, #quadro8, #quadro9{
+    border-bottom: none;
+}
+
+.x{
+    font-size: 65px;
+    color: blue;
+    display: inline-block;
+    line-height: 100px;         /*centralizando o bloco na vertical. Tem a mesma altura do quadro*/
+}
+
+.o{
+    width: 50px;
+    height: 50px;
+    border: 5px green solid;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 17px;
+}
+
+.esconder{
+    display: none !important;       /*esconder todos os elementos pais e filhos no início da página*/
+}
+
+
+#placar{
+    font-weight: bold;
+    margin: 30px auto 0px auto;
+    font-size: 25px;
+    position: relative;
+}
+
+.placar-pontos{
+    margin: 0 20px;
+}
+
+#marca-x{
+    color: blue;
+    margin-right: 3px;
+}
+
+#marca-o{
+    width: 18px;
+    height: 18px;
+    border: 2px green solid;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+#mensagem{
+    position: absolute;
+    margin: 70px auto;
+    right: 0;
+    left: 0;
+    top: 150px;
+    width: 500px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 50px;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+}

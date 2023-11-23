@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+    <main>
+        <div id="botoes">
+            <button id="jogaDois">2 jogadores</button>
+            <button id="jogaIa">Contra I.A</button>
+        </div>
+        <div id="jogo" class="esconder">
+            <div class="quadros" id="quadro1"></div>
+            <div class="quadros" id="quadro2"></div>
+            <div class="quadros" id="quadro3"></div>
+            <div class="quadros" id="quadro4"></div>
+            <div class="quadros" id="quadro5"></div>
+            <div class="quadros" id="quadro6"></div>
+            <div class="quadros" id="quadro7"></div>
+            <div class="quadros" id="quadro8"></div>
+            <div class="quadros" id="quadro9"></div>
+
+            <div id="placar">
+                <h2>Placar:</h2>
+                <span class="placar-pontos">
+                    <span id="marca-x">X</span>:
+                    <span id="placar-1">0</span>
+                </span>
+                <span class="placar-pontos">
+                    <span id="marca-o"></span>:
+                    <span id="placar-2">0</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="esconder">
+            <div class="x">X</div>
+            <div class="o"></div>
+        </div>
+        <div id="mensagem" class="esconder">
+            <p></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
